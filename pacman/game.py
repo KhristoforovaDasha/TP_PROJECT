@@ -1,4 +1,4 @@
-from info import *
+from MIPT_TP_PROJECT.pacman.info import *
 
 
 class Game:
@@ -13,6 +13,8 @@ class Game:
     def play(self):
         while True:
             self.move.move_pac(self.interface.read())
+            if Game.stop_game != ExitGame.CONTINUE:
+                break
             self.interface.draw(self.move.field)
             self.move.step()
             if Game.stop_game != ExitGame.CONTINUE:
@@ -24,8 +26,9 @@ class Game:
             self.exit()
 
     def stop(self):
+        print("You number of lives has decreased")
         self.interface.draw(Game.begin_field)
-        Game.stop_game = 0
+        Game.stop_game = ExitGame.CONTINUE
         self.play()
 
     @staticmethod

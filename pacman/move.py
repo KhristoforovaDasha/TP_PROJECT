@@ -1,5 +1,5 @@
 from random import randint
-from object import *
+from MIPT_TP_PROJECT.pacman.object import *
 from MIPT_TP_PROJECT.pacman.game import *
 
 
@@ -51,13 +51,17 @@ class Move:
         pass
 
     def do_move(self, x, y, delta_x, delta_y):
-        if self.field.get_obj_type(x + delta_x, y + delta_y) == ObjType.OBJ_DOT:
-            self.field.cell[x][y].obj.pacman_score += 1
-            self.field.cell[x + delta_x][y + delta_y].obj = Empty()
-        if self.field.cell[x][y].obj.pacman_score == Info.dots:
-            Game.stop_game = ExitGame.EXIT_WON
-        self.field.cell[x + delta_x][y + delta_y].obj, self.field.cell[x][y].obj =\
-            self.field.cell[x][y].obj, self.field.cell[x + delta_x][y + delta_y].obj
+        if self.field.get_obj_type(x + delta_x, y + delta_y) == ObjType.OBJ_GHOST:
+            self.field.cell[x][y].obj.decrease_life_count()
+            Game.stop_game = ExitGame.STOP
+        else:
+            if self.field.get_obj_type(x + delta_x, y + delta_y) == ObjType.OBJ_DOT:
+                self.field.cell[x][y].obj.pacman_score += 1
+                self.field.cell[x + delta_x][y + delta_y].obj = Empty()
+            if self.field.cell[x][y].obj.pacman_score == Info.dots:
+                Game.stop_game = ExitGame.EXIT_WON
+            self.field.cell[x + delta_x][y + delta_y].obj, self.field.cell[x][y].obj = \
+                self.field.cell[x][y].obj, self.field.cell[x + delta_x][y + delta_y].obj
 
     def move_pac(self, place):
         is_move = 0
