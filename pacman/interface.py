@@ -1,8 +1,8 @@
 from abc import ABCMeta, abstractmethod
-from MIPT_TP_PROJECT.pacman.info import *
+from info import *
 import pygame
 from time import sleep
-import MIPT_TP_PROJECT.pacman.info as info
+import info as info
 
 
 def interface_init(interface_type):
