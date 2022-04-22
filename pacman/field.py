@@ -1,5 +1,4 @@
-from MIPT_TP_PROJECT.pacman.object import *
-from builtins import Exception
+from object import *
 
 
 class Cell:
@@ -7,6 +6,7 @@ class Cell:
         self.obj = obj
         self.pos_x = pos_x
         self.pos_y = pos_y
+        self.obj_second = Empty()
 
 
 class Field:
@@ -15,6 +15,15 @@ class Field:
 
     def get_obj_type(self, pos_x, pos_y):
         return self.cell[pos_x][pos_y].obj.get_type()
+
+    def get_obj_second_type(self, pos_x, pos_y):
+        return self.cell[pos_x][pos_y].obj_second.get_type()
+
+    def get_obj_colour(self, pos_x, pos_y):
+        return self.cell[pos_x][pos_y].obj.get_colour()
+
+    def get_obj_second_colour(self, pos_x, pos_y):
+        return self.cell[pos_x][pos_y].obj_second.get_colour()
 
     def get_cell(self, pos_x, pos_y):
         return self.cell[pos_x][pos_y]
