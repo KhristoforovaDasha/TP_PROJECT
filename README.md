@@ -13,4 +13,4 @@ main.py\
 Теперь есть графический интерфейс и 3 уровня сложности(они различаюся по размеру поля и количеству привидений). В начале игры в консоль нужно ввести 
 желаемую сложность(easy/medium/hard) и тип интерфейса(console/graphic).Так же теперь отображается количество жизней у пакмана и количество очков.
 
-![Alt text](MIPT_TP_PROJECT/readme_images/pacman_game.png)
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/pacman_game.png)
