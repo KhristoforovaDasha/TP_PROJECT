@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
-import MIPT_TP_PROJECT.pacman.info as info
-from MIPT_TP_PROJECT.pacman.object import Pacman, Ghost, Empty, Dot, Wall
-from MIPT_TP_PROJECT.pacman.field import Cell, Field
+import info as info
+from object import Pacman, Ghost, Empty, Dot, Wall
+from field import Cell, Field
 
 
 def field_init(game_level):

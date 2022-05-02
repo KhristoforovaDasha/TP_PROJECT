@@ -1,4 +1,4 @@
-from MIPT_TP_PROJECT.pacman.info import *
+from info import *
 from abc import ABCMeta, abstractmethod
 
 

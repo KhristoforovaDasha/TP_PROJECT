@@ -1,7 +1,7 @@
 from random import randint
-from MIPT_TP_PROJECT.pacman.object import *
-from MIPT_TP_PROJECT.pacman.game import *
-import MIPT_TP_PROJECT.pacman.info as info
+from object import *
+from game import *
+import info as info
 
 
 class Move:

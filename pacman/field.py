@@ -1,4 +1,4 @@
-from MIPT_TP_PROJECT.pacman.object import *
+from object import *
 
 
 class Cell:

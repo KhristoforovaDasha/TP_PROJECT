@@ -1,7 +1,7 @@
-import MIPT_TP_PROJECT.pacman.interface as interface
-from MIPT_TP_PROJECT.pacman.move import *
-from MIPT_TP_PROJECT.pacman.game import *
-import MIPT_TP_PROJECT.pacman.level as level
+import interface as interface
+from move import *
+from game import *
+import level as level
 
 
 game_level = input()
