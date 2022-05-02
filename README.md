@@ -14,10 +14,15 @@ main.py\
 желаемую сложность(easy/medium/hard) и тип интерфейса(console/graphic).Так же теперь отображается количество жизней у пакмана и количество очков.
 Здесь можно посмотреть как выглядит процесс игры в графическом интерфейсе
 
+Поле для простого уровня
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/pacman_field.png)
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/pacman_game.png)
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/lives_decrease.png)
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/won.png)
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/game_over.png)
+
+Поле для среднего уровня
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/medium.png)
+
+Поле для тяжёлого уровня
 ![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/hard.png)
