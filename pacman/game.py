@@ -1,8 +1,8 @@
-from MIPT_TP_PROJECT.pacman.info import *
+from info import *
 from copy import deepcopy
 from object import Empty
-import MIPT_TP_PROJECT.pacman.info as info
-from MIPT_TP_PROJECT.pacman.interface import *
+import info as info
+from interface import *
 import sys
 
 
