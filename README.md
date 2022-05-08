@@ -23,4 +23,16 @@ EasyLevel, MediumLevel, HardLevel наследуются от Level;\
 Game содержит в себе Move, Interface\
 Move содержит в себе Level, Field\
 Легковес:\
-Использование класса Info, где содержатся данные, которые одинаковы для всех объектов какого-то типа
+Использование класса Info, где содержатся данные, которые одинаковы для всех объектов какого-то типа\
+Поле для простого уровня\
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/pacman_field.png)
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/pacman_game.png)
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/lives_decrease.png)
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/won.png)
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/game_over.png)
+
+Поле для среднего уровня
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/medium.png)
+
+Поле для тяжёлого уровня
+![Alt text](https://github.com/KhristoforovaDasha/MIPT_TP_PROJECT/blob/dev/readme_images/hard.png)

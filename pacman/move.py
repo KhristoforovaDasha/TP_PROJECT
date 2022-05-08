@@ -4,6 +4,7 @@ from game import *
 import info as info
 
 
+
 class Move:
     def __init__(self, field):
         self.field = field
